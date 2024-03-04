@@ -1,4 +1,4 @@
-# La classe produit
+# La classe produit pour créer des produits
 class Produit:
   def __init__(self,nom,prix_unitaire,quantite_en_stock) -> None:
     self.nom=nom
@@ -11,12 +11,12 @@ class Produit:
 # Le produit à afficher
 mon_produit=Produit("Cassoulet", 2_000_000.45, 2_000)
 
-# Affiche les informations du produits
+# Affiche les informations du produits par défaut
 mon_produit.afficher()
 
 # Applique l'inflation au produit
 print("===================== INFLATION =====================")
 mon_produit.prix_unitaire*=1.1
 
-# Affiche les informations du produits après l'inflation
+# Affiche les informations du produits avec les modifications de l'inflation
 mon_produit.afficher()

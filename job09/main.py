@@ -1,6 +1,6 @@
 # Une classe pour créer des produits
 class Produit:
-  def __init__(self,nom,prix_unitaire,quantite_en_stock) -> None:
+  def __init__(self, nom: str, prix_unitaire: float, quantite_en_stock: int) -> None:
     self.nom=nom
     self.prix_unitaire=prix_unitaire
     self.quantite_en_stock=quantite_en_stock

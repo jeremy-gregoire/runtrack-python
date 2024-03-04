@@ -1,5 +1,5 @@
-montant_initial_invest=25_000
-taux_rend_annuel=1.1
+montant_initial_invest=float(input("Montant initial de l'investissement: "))
+taux_rend_annuel=1+(float(input("Taux de rendement annuel: "))/100)
 gain_annuel=(montant_initial_invest*taux_rend_annuel)*12
 
 print(gain_annuel)

@@ -1,11 +1,16 @@
-L = [ 8, 24, 48, 2, 16 ]
-nb_mutiples = 0
+# Initialisation d'une liste L de nombres
+L = [8, 24, 48, 2, 16]
 
-print("La liste actuel:", L)
+# Initialisation d'une variable pour compter le nombre de multiples de 3
+nb_multiples = 0
 
+# Affichage de la liste initiale
+print("La liste actuelle:", L)
+
+# Parcours de la liste pour compter les multiples de 3
 for nombre in L:
   if nombre % 3 == 0:
-    nb_mutiples += 1
+    nb_multiples += 1
 
-print("Il y a", nb_mutiples, "multiples" if nb_mutiples > 1 else "multiple", "de 3")
-
+# Affichage du nombre de multiples de 3
+print("Il y a", nb_multiples, "multiples" if nb_multiples > 1 else "multiple", "de 3")
